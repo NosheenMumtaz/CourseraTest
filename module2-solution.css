@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  p {
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  
+  body {
+    font-family: Arial, sans-serif; /* Optional */
+    margin-top: 20px;
+  }
+  
+  h1 {
+    font-size: 2em; /* 75% larger than dummy text */
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .section {
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    background-color: darkgray; /* Light Gray */
+  }
+
+  
+  .section-title {
+    background-color: pink; /* Yellow */
+    border: 1px solid black;
+    color: black;
+    font-size: 125%; /* 25% larger than dummy text */
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .section-title2 {
+    background-color: red; /* Yellow */
+    border: 1px solid black;
+    font-size: 125%; /* 25% larger than dummy text */
+    color: #E0E0E0;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .section-title3 {
+    background-color: #FFD700; /* Yellow */
+    border: 1px solid black;
+    color: black;
+    font-size: 125%; /* 25% larger than dummy text */
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  /* Desktop view */
+  @media (min-width: 992px) {
+    .section {
+      width: 33.33%; /* Equal width for each section */
+      float: left;
+      margin-right: 20px;
+    }
+    .section:last-child {
+      margin-right: 0;
+    }
+  }
+  
+  /* Tablet view */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .section {
+      width: 50%; /* Equal width for first two sections */
+      float: left;
+      margin-right: 0;
+    }
+    .section:last-child {
+      width: 100%; /* Full width for the third section */
+      float: none;
+    }
+  }
+  
+  /* Mobile view */
+  @media (max-width: 767px) {
+    .section {
+      width: 100%; /* Full width for each section */
+      margin-right: 0;
+    }
+  }
+  
